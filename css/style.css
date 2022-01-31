@@ -54,3 +54,21 @@ header {
 	background-color: #eaeaea;
 	height: 70px;
 }
+
+/* # Message Area */
+#message-area .row{
+	background-color: #f3eeea;
+}
+
+#message-area i {
+	font-size: 25px;
+	color: #6b7376;
+}
+
+#message-area input {
+	width: 100%;
+}
+
+#message-area [class^="col"] {
+	border: 1px solid black
+}

@@ -18,13 +18,13 @@
 		<main class="container">
 			<div class="row h-100">
 				<!-- # Contacts Section -->
-				<div id="contacts-section" class="col-4">
+				<section id="contacts-section" class="col-4">
 					<!-- # Header -->
 					<header class="row">
 						<div class="col d-flex justify-content-between align-items-center">
 							<figure class="m-0">
 								<img class="contact-img" src="./img/avatar_io.jpg" alt="User Name">
-								<figcaption class="d-inline-block">User Name</figcaption>
+								<figcaption class="d-inline-block">{{user.name}}</figcaption>
 							</figure>
 							<p class="m-0">ICONE</p>
 						</div>
@@ -45,7 +45,8 @@
 						<input type="text" class="w-100" placeholder="Cerca o inizia una nuova chat">
 					</div>
 					<!-- # Contacts list -->
-					<!-- TODO Cambiare l'immagine di profilo dinamicamente; cambiare img alt dinamicamente -->
+					<!-- TODO Cambiare l'immagine di profilo dinamicamente; cambiare img alt dinamicamente;
+					TODO Aggiungere overscroll -->
 					<section id="contacts-list">
 						<div v-for="contact in contacts" class="row">
 							<div class="col d-flex justify-content-between align-items-center">
@@ -56,9 +57,9 @@
 							</div>
 						</div>
 					</section>
-				</div>
+				</section>
 				<!-- # Chat Section -->
-				<div class="col-8 bg-secondary">
+				<section class="col-8 bg-secondary">
 					<!-- # Header -->
 					<header class="row">
 						<div class="col d-flex justify-content-between align-items-center">
@@ -74,7 +75,23 @@
 							<p class="m-0">ICONE</p>
 						</div>
 					</header>
-				</div>
+					<!-- # Message Area -->
+					<footer id="message-area">
+						<div class="row">
+							<div class="col-1 d-flex justify-content-center align-items-center">
+								<i class="far fa-smile"></i>
+							</div>
+							<div class="col-10 py-2">
+								<div class="form-floating">
+									<input type="text" class="form-control" placeholder="Scrivi un messaggio">
+								</div>
+							</div>
+							<div class="col-1 d-flex justify-content-center align-items-center">
+								<i class="fas fa-microphone"></i>
+							</div>
+						</div>
+					</footer>
+				</section>
 			</div>
 		</main>
 	</div>
