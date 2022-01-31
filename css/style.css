@@ -4,7 +4,7 @@ body {
 	background-color: #009688;
 }
 
-main{
+main {
 	 height: 90%;
 }
 
@@ -55,6 +55,12 @@ header {
 	height: 70px;
 }
 
+/* # Chat Section */
+
+section.col-8 {
+	background-image: url(../img/mine.jpg);
+}
+
 /* # Message Area */
 #message-area .row{
 	background-color: #f3eeea;
@@ -69,6 +75,4 @@ header {
 	width: 100%;
 }
 
-#message-area [class^="col"] {
-	border: 1px solid black
-}
+/* # Chat Area */
