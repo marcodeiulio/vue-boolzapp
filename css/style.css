@@ -1,3 +1,4 @@
+/* # Utils */
 body {
 	height: 100vh;
 	background-color: #009688;
@@ -7,6 +8,18 @@ main{
 	 height: 90%;
 }
 
+h6 {
+	color: #9ea1a1;
+	display: inline;
+	margin: 0;
+}
+
+/* # Contacts section */
+#contacts-section {
+	background-color: #fafafa;
+}
+
+/* # Header */
 header {
 	background-color: #eaeaea;
 	height: 70px;
@@ -18,7 +31,20 @@ header img {
 	border-radius: 50%;
 }
 
-figure h6 {
-	color: #9ea1a1;
-	display: inline;
+/* # Notifications Alert */
+#notifications-alert {
+	background-color: #8edafc;
+	height: 70px;
+}
+
+#notifications-alert p {
+	margin: 0;
+}
+
+#notifications-alert i {
+	font-size: large;
+	color: #8edafc;
+	background-color: #fff;
+	padding: 15px;
+	border-radius: 50%;
 }
