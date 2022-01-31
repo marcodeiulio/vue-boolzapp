@@ -45,29 +45,13 @@
 						<input type="text" class="w-100" placeholder="Cerca o inizia una nuova chat">
 					</div>
 					<!-- # Contacts list -->
-					<!-- TODO Implementare Vue.js -->
+					<!-- TODO Cambiare l'immagine di profilo dinamicamente; cambiare img alt dinamicamente -->
 					<section id="contacts-list">
-						<div class="row">
+						<div v-for="contact in contacts" class="row">
 							<div class="col d-flex justify-content-between align-items-center">
 								<figure class="m-0">
-									<img class="contact-img" src="./img/avatar_1.jpg" alt="User Name">
-									<figcaption class="d-inline-block">Contact Name</figcaption>
-								</figure>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col d-flex justify-content-between align-items-center">
-								<figure class="m-0">
-									<img class="contact-img" src="./img/avatar_2.jpg" alt="User Name">
-									<figcaption class="d-inline-block">Contact Name</figcaption>
-								</figure>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col d-flex justify-content-between align-items-center">
-								<figure class="m-0">
-									<img class="contact-img" src="./img/avatar_3.jpg" alt="User Name">
-									<figcaption class="d-inline-block">Contact Name</figcaption>
+									<img class="contact-img" src="./img/avatar_1.jpg" alt="Contact avatar">
+									<figcaption class="d-inline-block">{{contact.name}}</figcaption>
 								</figure>
 							</div>
 						</div>
