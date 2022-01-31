@@ -76,3 +76,17 @@ section.col-8 {
 }
 
 /* # Chat Area */
+.msg {
+	min-height: 50px;
+	flex-grow: 0;
+	flex-basis: 40%;
+	border-radius: 10px;
+}
+
+.msg-sent {
+	background-color: #d5f9ba;
+}
+
+.msg-received {
+	background-color: #ffffff;
+}
