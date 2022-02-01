@@ -100,12 +100,25 @@ const root = new Vue({
 		setCurrentChat(index) {
 			this.currentChat = (index);
 		},
+		autoReply(index) {
+			console.log("timeout");
+			setTimeout(() => {
+				this.contacts[index].messages.push({
+					date: '10/01/2020 15:50:00',
+					text: 'ok',
+					status: 'received'
+				})
+			}, 2000)
+		},
 		sendNewMessage(index) {
-			if (this.newString.trim()) this.contacts[index].messages.push({
-				date: '10/01/2020 15:50:00',
-				text: this.newString.trim(),
-				status: 'sent'
-			});
+			if (this.newString.trim()) {
+				this.contacts[index].messages.push({
+					date: '10/01/2020 15:50:00',
+					text: this.newString.trim(),
+					status: 'sent'
+				});
+				this.autoReply(index);
+			};
 			this.newString = '';
 		},
 	}
