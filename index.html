@@ -92,7 +92,7 @@
 							<div class="col-10 py-2 px-0">
 								<!-- TODO Fix Placeholder -->
 								<div class="form-floating">
-									<input type="text" class="form-control" placeholder="Scrivi un messaggio">
+									<input type="text" class="form-control" v-model="string" @keyup.enter="sendNewMessage(currentChat)">
 								</div>
 							</div>
 							<div class="col-1 d-flex justify-content-center align-items-center">

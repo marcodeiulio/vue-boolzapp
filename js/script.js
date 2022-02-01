@@ -4,6 +4,12 @@ const root = new Vue({
 	el: '#root',
 	data: {
 		currentChat: 0,
+		string: '',
+		newMessage: {
+			date: '10/01/2020 15:50:00',
+			text: '',
+			status: 'sent'
+		},
 		user: {
 			name: 'Elisa Toffoli',
 			avatar: '_io'
@@ -93,6 +99,11 @@ const root = new Vue({
 	methods: {
 		setCurrentChat(index) {
 			this.currentChat = (index);
+		},
+		sendNewMessage(index) {
+			this.newMessage.text = this.string.trim();
+			this.contacts[index].messages.push(this.newMessage);
+			this.string = '';
 		}
 	}
 })
