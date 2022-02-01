@@ -1,7 +1,7 @@
 /* # Utils */
 body {
 	height: 100vh;
-	background-color: #009688;
+	background: linear-gradient(to bottom, #009688 20%, #dcdbd2 20%);
 }
 
 main {
