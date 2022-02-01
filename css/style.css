@@ -20,6 +20,12 @@ h6 {
 	border-radius: 50%;
 }
 
+.icons i{
+	font-size: 20px;
+	padding: 0 10px;
+	color: #b1b1b1;
+}
+
 /* # Contacts Section */
 #contacts-section {
 	background-color: #fff;
