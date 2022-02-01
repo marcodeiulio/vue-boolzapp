@@ -51,7 +51,7 @@
 						<li v-for="contact in contacts" class="contact p-2">
 							<div class="d-flex justify-content-between align-items-center">
 								<figure class="m-0">
-									<img class="contact-img" :src="`./img/avatar${contact.avatar}.jpg`" alt="Contact avatar">
+									<img class="contact-img" :src="`./img/avatar${contact.avatar}.jpg`" :alt="`${contact.name} avatar`">
 									<figcaption class="d-inline-block">{{contact.name}}</figcaption>
 								</figure>
 							</div>
