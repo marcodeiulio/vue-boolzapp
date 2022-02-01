@@ -78,17 +78,31 @@ section.col-8 {
 }
 
 /* # Chat Area */
+.msg-row {
+	align-items: center;
+	display: flex;
+	padding: 10px;
+}
+
+.sent {
+	justify-content: end;
+}
+
+.received {
+	justify-content: start;
+}
+
 .msg {
 	min-height: 50px;
-	flex-grow: 0;
-	flex-basis: 40%;
+	max-width: 380px;
+	padding: 5px 10px;
 	border-radius: 10px;
 }
 
-.msg-sent {
+.sent .msg {
 	background-color: #d5f9ba;
 }
 
-.msg-received {
+.received .msg {
 	background-color: #ffffff;
 }
