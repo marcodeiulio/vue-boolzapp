@@ -80,7 +80,7 @@ const root = new Vue({
 			},
 			{
 				name: 'Luisa',
-				avatar: '_4',
+				avatar: '_6',
 				visible: true,
 				messages: [{
 					date: '10/01/2020 15:30:55',
