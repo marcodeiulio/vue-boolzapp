@@ -48,7 +48,7 @@
 					<!-- # Contacts list -->
 					<!-- TODO Aggiungere overflow -->
 					<ul id="contacts-list" class="p-0 overflow-auto">
-						<li v-for="contact in contacts" class="contact p-2">
+						<li v-for="(contact, index) in contacts" class="contact p-2" @click="setCurrentChat(index)">
 							<div class="d-flex justify-content-between align-items-center">
 								<figure class="m-0">
 									<img class="contact-img" :src="`./img/avatar${contact.avatar}.jpg`" :alt="`${contact.name} avatar`">
@@ -67,7 +67,7 @@
 								<img class="contact-img" src="./img/avatar_3.jpg" alt="Contact Name">
 								<span class="d-inline-block">
 									<span class="d-flex flex-column">
-										<figcaption class="d-inline-block">Contact Name</figcaption>
+										<figcaption class="d-inline-block">{{currentChat}}</figcaption>
 										<h6>Ultimo accesso alle</h6>
 									</span>
 								</span>
@@ -77,14 +77,9 @@
 					</header>
 					<!-- # Chat Area -->
 					<div id="chat-area" class="container flex-grow-1">
-						<div class="msg-row sent">
+						<div v-for="message in contacts[0].messages" class="msg-row" :class="{sent : message.status == 'sent', received : message.status == 'received'}">
 							<div class="msg">
-								<p>Hai portato a spasso il cane?</p>
-							</div>
-						</div>
-						<div class="msg-row received">
-							<div class="msg">
-								<p>Non dovevi farlo tu?</p>
+								<p>{{message.text}}</p>
 							</div>
 						</div>
 					</div>
