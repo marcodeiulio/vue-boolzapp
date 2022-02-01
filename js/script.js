@@ -110,7 +110,6 @@ const root = new Vue({
 				})
 			}, 2000)
 		},
-		// TODO Inserire data con Day.js
 		sendNewMessage(index) {
 			if (this.newString.trim()) {
 				this.contacts[index].messages.push({

@@ -26,6 +26,10 @@ h6 {
 	color: #b1b1b1;
 }
 
+.shadow {
+	box-shadow: 10px 10px 12px rgba(41, 41, 41, 0.226);
+}
+
 /* # Contacts Section */
 #contacts-section {
 	background-color: #fff;
