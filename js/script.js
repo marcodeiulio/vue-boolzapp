@@ -123,3 +123,5 @@ const root = new Vue({
 		},
 	}
 })
+
+console.log(dayjs());
