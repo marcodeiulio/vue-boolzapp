@@ -50,9 +50,13 @@ header {
 }
 
 /* # Contacts List */
-#contacts-list .row {
-	background-color: #eaeaea;
+#contacts-list .contact {
+	background-color: #fff;
 	height: 70px;
+}
+
+#contacts-list .contact:hover {
+	background-color: #e9ebeb;
 }
 
 /* # Chat Section */

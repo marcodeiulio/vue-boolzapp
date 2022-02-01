@@ -49,10 +49,10 @@
 					<!-- TODO Cambiare l'immagine di profilo dinamicamente; cambiare img alt dinamicamente;
 					TODO Aggiungere overscroll -->
 					<section id="contacts-list">
-						<div v-for="contact in contacts" class="row">
+						<div v-for="contact in contacts" class="row contact">
 							<div class="col d-flex justify-content-between align-items-center">
 								<figure class="m-0">
-									<img class="contact-img" src="./img/avatar_1.jpg" alt="Contact avatar">
+									<img class="contact-img" :src="`./img/avatar${contact.avatar}.jpg`" alt="Contact avatar">
 									<figcaption class="d-inline-block">{{contact.name}}</figcaption>
 								</figure>
 							</div>
