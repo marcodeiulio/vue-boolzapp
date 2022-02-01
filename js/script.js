@@ -3,7 +3,7 @@ Vue.config.devtools = true
 const root = new Vue({
 	el: '#root',
 	data: {
-		currentChat: '',
+		currentChat: 0,
 		user: {
 			name: 'Elisa Toffoli',
 			avatar: '_io'
@@ -89,10 +89,10 @@ const root = new Vue({
 				],
 			},
 		],
-		methods: {
-			setCurrentChat(index) {
-				this.currentChat = index;
-			}
+	},
+	methods: {
+		setCurrentChat(index) {
+			this.currentChat = (index);
 		}
 	}
 })
