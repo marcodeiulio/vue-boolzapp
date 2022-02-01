@@ -104,16 +104,17 @@ const root = new Vue({
 			console.log("timeout");
 			setTimeout(() => {
 				this.contacts[index].messages.push({
-					date: '10/01/2020 15:50:00',
+					date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
 					text: 'ok',
 					status: 'received'
 				})
 			}, 2000)
 		},
+		// TODO Inserire data con Day.js
 		sendNewMessage(index) {
 			if (this.newString.trim()) {
 				this.contacts[index].messages.push({
-					date: '10/01/2020 15:50:00',
+					date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
 					text: this.newString.trim(),
 					status: 'sent'
 				});
