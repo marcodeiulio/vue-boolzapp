@@ -46,18 +46,17 @@
 						<input type="text" class="w-100" placeholder="Cerca o inizia una nuova chat">
 					</div>
 					<!-- # Contacts list -->
-					<!-- TODO Cambiare l'immagine di profilo dinamicamente; cambiare img alt dinamicamente;
-					TODO Aggiungere overscroll -->
-					<section id="contacts-list">
-						<div v-for="contact in contacts" class="row contact">
-							<div class="col d-flex justify-content-between align-items-center">
+					<!-- TODO Aggiungere overscroll -->
+					<ul id="contacts-list" class="p-0 overflow-auto">
+						<li v-for="contact in contacts" class="contact p-2">
+							<div class="d-flex justify-content-between align-items-center">
 								<figure class="m-0">
 									<img class="contact-img" :src="`./img/avatar${contact.avatar}.jpg`" alt="Contact avatar">
 									<figcaption class="d-inline-block">{{contact.name}}</figcaption>
 								</figure>
 							</div>
-						</div>
-					</section>
+						</li>
+					</ul>
 				</section>
 				<!-- # Chat Section -->
 				<section class="col-8 d-flex flex-column">

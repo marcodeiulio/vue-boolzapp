@@ -22,7 +22,7 @@ h6 {
 
 /* # Contacts Section */
 #contacts-section {
-	background-color: #fafafa;
+	background-color: #fff;
 }
 
 /* # Header */
@@ -50,9 +50,13 @@ header {
 }
 
 /* # Contacts List */
+/* #contacts-list {
+	overflow-x: hidden;
+	overflow-y: scroll;
+} */
+
 #contacts-list .contact {
 	background-color: #fff;
-	height: 70px;
 }
 
 #contacts-list .contact:hover {
