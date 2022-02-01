@@ -65,6 +65,10 @@ header {
 	background-color: #e9ebeb;
 }
 
+#contacts-list .active {
+	background-color: #e9ebeb;
+}
+
 /* # Chat Section */
 
 section.col-8 {
