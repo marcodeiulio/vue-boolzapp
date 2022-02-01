@@ -4,7 +4,7 @@ const root = new Vue({
 	el: '#root',
 	data: {
 		currentChat: 0,
-		string: '',
+		newString: '',
 		newMessage: {
 			date: '10/01/2020 15:50:00',
 			text: '',
@@ -101,9 +101,12 @@ const root = new Vue({
 			this.currentChat = (index);
 		},
 		sendNewMessage(index) {
-			this.newMessage.text = this.string.trim();
-			this.contacts[index].messages.push(this.newMessage);
-			this.string = '';
-		}
+			if (this.newString.trim()) this.contacts[index].messages.push({
+				date: '10/01/2020 15:50:00',
+				text: this.newString.trim(),
+				status: 'sent'
+			});
+			this.newString = '';
+		},
 	}
 })
