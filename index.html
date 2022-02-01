@@ -76,7 +76,7 @@
 						</div>
 					</header>
 					<!-- # Chat Area -->
-					<div id="chat-area" class="container flex-grow-1">
+					<div id="chat-area" class="container flex-grow-1 overflow-auto">
 						<div v-for="message in contacts[currentChat].messages" class="msg-row" :class="{sent : message.status == 'sent', received : message.status == 'received'}">
 							<div class="msg">
 								<p>{{message.text}}</p>

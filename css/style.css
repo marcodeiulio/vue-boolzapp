@@ -66,6 +66,10 @@ section.col-8 {
 }
 
 /* # Message Area */
+#message-area {
+	max-height: 90vh;
+}
+
 #message-area .row{
 	background-color: #f3eeea;
 }
