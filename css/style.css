@@ -114,3 +114,10 @@ section.col-8 {
 .received .msg {
 	background-color: #ffffff;
 }
+
+.msg-date {
+	text-align: end;
+	font-size: 10px;
+	color: gray;
+	margin: 0;
+}
