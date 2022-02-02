@@ -35,6 +35,10 @@ i {
 	box-shadow: 10px 10px 12px rgba(41, 41, 41, 0.226);
 }
 
+.hidden {
+	display: none;
+}
+
 /* # Contacts Section */
 #contacts-section {
 	background-color: #fff;
@@ -70,9 +74,10 @@ header {
 }
 
 #contacts-search i {
+	font-size: 18px;
 	position: absolute;
 	top: 15px;
-	left: 20px;
+	left: 18px;
 	color: #6c757d;
 }
 

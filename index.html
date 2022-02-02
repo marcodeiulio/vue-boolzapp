@@ -52,7 +52,7 @@
 					<!-- # Contacts list -->
 					<div id="contacts-list" class="overflow-auto">
 						<ul class="p-0">
-							<li v-for="(contact, index) in contacts" class="contact p-2" :class="{active : index == currentChat}" @click="setCurrentChat(index)">
+							<li v-for="(contact, index) in contacts" class="contact p-2" :class="{active : index == currentChat, hidden : !contact.visible}" @click="setCurrentChat(index)">
 								<div class="d-flex justify-content-between align-items-center">
 									<figure class="m-0">
 										<img class="contact-img" :src="`./img/avatar${contact.avatar}.jpg`" :alt="`${contact.name} avatar`">

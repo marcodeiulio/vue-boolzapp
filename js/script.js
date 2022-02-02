@@ -18,7 +18,7 @@ const root = new Vue({
 			{
 				name: 'Michele',
 				avatar: '_1',
-				visible: true,
+				visible: false,
 				messages: [{
 					date: '10/01/2020 15:30:55',
 					text: 'Hai portato a spasso il cane?',
@@ -53,7 +53,7 @@ const root = new Vue({
 				{
 					date: '20/03/2020 16:35:00',
 					text: 'Mi piacerebbe ma devo andare a fare la spesa.',
-					status: 'received'
+					status: 'sent'
 				}
 				],
 			},
