@@ -1,7 +1,7 @@
 /* # Utils */
 body {
 	height: 100vh;
-	background: linear-gradient(to bottom, #009688 20%, #dcdbd2 20%);
+	background: linear-gradient(to bottom, #009688 20%, #dcdbd2 20%,#dcdbd2 100%);
 }
 
 main {
@@ -38,7 +38,6 @@ i {
 /* # Contacts Section */
 #contacts-section {
 	background-color: #fff;
-	max-height: 90vh;
 }
 
 /* # Header */
@@ -91,16 +90,11 @@ header {
 }
 
 /* # Chat Section */
-
 section.col-8 {
 	background-image: url(../img/mine.jpg);
 }
 
 /* # Message Area */
-#message-area {
-	max-height: 90vh;
-}
-
 #message-area .row{
 	background-color: #f3eeea;
 }
