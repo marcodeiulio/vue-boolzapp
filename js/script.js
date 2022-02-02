@@ -124,7 +124,7 @@ const root = new Vue({
 		},
 		searchBar() {
 			this.contacts.forEach((contact => {
-				if (!contact.name.includes(this.contactSearch)) {
+				if (!contact.name.toLowerCase().includes(this.contactSearch.toLowerCase())) {
 					contact.visible = false;
 				} else if (!this.contactSearch) contact.visible = true;
 				else contact.visible = true;
