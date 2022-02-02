@@ -130,7 +130,9 @@ const root = new Vue({
 				else contact.visible = true;
 			}))
 		},
-	}
+	}, watch: {
+		contactSearch: function () {
+			this.searchBar();
+		}
+	},
 })
-
-console.log(dayjs());
