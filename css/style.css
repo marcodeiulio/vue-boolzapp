@@ -60,6 +60,18 @@ header {
 	border-radius: 50%;
 }
 
+/* # Contacts searchbar */
+#contacts-search {
+	position: relative;
+}
+
+#contacts-search i {
+	position: absolute;
+	top: 15px;
+	left: 20px;
+	color: #6c757d;
+}
+
 /* # Contacts List */
 #contacts-list .contact {
 	background-color: #fff;

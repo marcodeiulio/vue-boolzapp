@@ -41,13 +41,13 @@
 						</div>
 						<div class="col-10 d-flex flex-column justify-content-center">
 							<p>Ricevi notifiche di nuovi messaggi</p>
-							<h6>Attiva notifiche desktop</h6>
+							<a href="" class="h6 text-secondary">Attiva notifiche desktop</a>
 						</div>
 					</div>
 					<!-- # Contacts searchbar -->
-					<!-- TODO Includere l'input in un div di egual colore e lente come label -->
-					<div id="contacts-search" class="p-1">
-						<input type="text" class="w-100" placeholder="Cerca o inizia una nuova chat">
+					<div id="contacts-search" class="py-2">
+						<i class="fas fa-search"></i>
+						<input class="form-control form-control-sm ps-5" type="text" placeholder="Cerca o inizia una nuova chat">
 					</div>
 					<!-- # Contacts list -->
 					<!-- TODO Aggiungere overflow -->
@@ -67,8 +67,8 @@
 					<!-- # Header -->
 					<header class="row">
 						<div class="col d-flex justify-content-between align-items-center">
-							<figure class="m-0">
-								<img class="contact-img shadow" :src="`./img/avatar${contacts[currentChat].avatar}.jpg`" :alt="`${contacts[currentChat].name} avatar`">
+							<figure class="m-0 d-flex align-items-center">
+								<img class="contact-img shadow me-2" :src="`./img/avatar${contacts[currentChat].avatar}.jpg`" :alt="`${contacts[currentChat].name} avatar`">
 								<span class="d-inline-block">
 									<span class="d-flex flex-column">
 										<figcaption class="d-inline-block">{{contacts[currentChat].name}}</figcaption>
