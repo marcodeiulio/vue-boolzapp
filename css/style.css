@@ -77,6 +77,10 @@ header {
 }
 
 /* # Contacts List */
+#contacts-list {
+	max-width: 100%;
+}
+
 #contacts-list .contact {
 	background-color: #fff;
 }
