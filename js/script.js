@@ -5,6 +5,7 @@ const root = new Vue({
 	data: {
 		currentChat: 0,
 		newString: '',
+		contactSearch: '',
 		newMessage: {
 			date: '10/01/2020 15:50:00',
 			text: '',
@@ -18,7 +19,7 @@ const root = new Vue({
 			{
 				name: 'Michele',
 				avatar: '_1',
-				visible: false,
+				visible: true,
 				messages: [{
 					date: '10/01/2020 15:30:55',
 					text: 'Hai portato a spasso il cane?',
@@ -101,13 +102,13 @@ const root = new Vue({
 			this.currentChat = (index);
 		},
 		autoReply(index) {
-			console.log("timeout");
 			setTimeout(() => {
 				this.contacts[index].messages.push({
 					date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
 					text: 'ok',
 					status: 'received'
 				})
+				console.log("timeout");
 			}, 2000)
 		},
 		sendNewMessage(index) {
@@ -120,6 +121,14 @@ const root = new Vue({
 				this.autoReply(index);
 			};
 			this.newString = '';
+		},
+		searchBar() {
+			this.contacts.forEach((contact => {
+				if (!contact.name.includes(this.contactSearch)) {
+					contact.visible = false;
+				} else if (!this.contactSearch) contact.visible = true;
+				else contact.visible = true;
+			}))
 		},
 	}
 })

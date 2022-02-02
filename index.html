@@ -47,7 +47,7 @@
 					<!-- # Contacts searchbar -->
 					<div id="contacts-search" class="py-2 flex-shrink-0">
 						<i class="fas fa-search"></i>
-						<input class="form-control form-control-sm ps-5" type="text" placeholder="Cerca o inizia una nuova chat">
+						<input class="form-control form-control-sm ps-5" type="text" placeholder="Cerca o inizia una nuova chat" v-model="contactSearch" @keyup.enter="searchBar()">
 					</div>
 					<!-- # Contacts list -->
 					<div id="contacts-list" class="overflow-auto">
