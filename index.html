@@ -87,12 +87,19 @@
 					<!-- # Chat Area -->
 					<div id="chat-area" class="container flex-grow-1">
 						<div v-for="message in contacts[currentChat].messages" class="msg-row" :class="{sent : message.status == 'sent', received : message.status == 'received'}">
-							<div class="msg shadow position-relative">
-								<p class="m-0">{{message.text}}</p>
-								<span class="msg-option position-absolute">
-									<i class="fas fa-chevron-down"></i>
+							<div class="msg shadow position-relative d-flex">
+								<span class="pe-2">
+									<p class="m-0">{{message.text}}</p>
+									<p class="msg-date">{{message.date}}</p>
 								</span>
-								<p class="msg-date">{{message.date}}</p>
+								<div class="dropdown position-absolute">
+									<button class="btn px-1 dropdown-toggle shadow-none" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
+									</button>
+									<ul class="dropdown-menu d-block">
+										<li><a class="dropdown-item" href="#">Info messaggio</a></li>
+										<li><a class="dropdown-item" href="#">Cancella messaggio</a></li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
