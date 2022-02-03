@@ -164,7 +164,8 @@ section.col-8 {
 }
 
 .msg-option i{
-font-size: 12px;
+font-size: 10px;
+color: #5f5f5f;
 }
 
 .msg-option {
@@ -173,11 +174,11 @@ font-size: 12px;
 }
 
 .sent .msg-option {
-	top: 0%;
+	top: -6%;
 	left: 95%;
 }
 
 .received .msg-option {
-	top: -3%;
+	top: -9%;
 	right: -3%;
 }
