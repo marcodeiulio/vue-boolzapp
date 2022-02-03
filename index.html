@@ -85,10 +85,13 @@
 						</div>
 					</header>
 					<!-- # Chat Area -->
-					<div id="chat-area" class="container flex-grow-1 overflow-auto">
+					<div id="chat-area" class="container flex-grow-1">
 						<div v-for="message in contacts[currentChat].messages" class="msg-row" :class="{sent : message.status == 'sent', received : message.status == 'received'}">
-							<div class="msg shadow">
+							<div class="msg shadow position-relative">
 								<p class="m-0">{{message.text}}</p>
+								<span class="msg-option position-absolute">
+									<i class="fas fa-chevron-down"></i>
+								</span>
 								<p class="msg-date">{{message.date}}</p>
 							</div>
 						</div>
