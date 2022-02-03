@@ -86,7 +86,7 @@
 					</header>
 					<!-- # Chat Area -->
 					<div id="chat-area" class="container flex-grow-1">
-						<div v-for="message in contacts[currentChat].messages" class="msg-row" :class="{sent : message.status == 'sent', received : message.status == 'received'}">
+						<div v-for="(message, index) in contacts[currentChat].messages" class="msg-row" :class="{sent : message.status == 'sent', received : message.status == 'received'}">
 							<div class="msg shadow position-relative d-flex">
 								<span class="pe-2">
 									<p class="m-0">{{message.text}}</p>
@@ -97,7 +97,7 @@
 									</button>
 									<ul class="dropdown-menu d-block">
 										<li><a class="dropdown-item" href="#">Info messaggio</a></li>
-										<li><a class="dropdown-item" href="#">Cancella messaggio</a></li>
+										<li><a @click="removeMessage(index)" class="dropdown-item" href="#">Cancella messaggio</a></li>
 									</ul>
 								</div>
 							</div>

@@ -130,6 +130,9 @@ const root = new Vue({
 				else contact.visible = true;
 			}))
 		},
+		removeMessage(index) {
+			this.contacts[this.currentChat].messages.splice(index, 1)
+		},
 	}, watch: {
 		contactSearch: function () {
 			this.searchBar();
